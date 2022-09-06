@@ -1,0 +1,202 @@
+<svg viewBox="0 0 1080 192" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Defining colors for columns #ebd700 -->
+    <linearGradient id="colorCol0">
+      <stop stop-color="#ff1f3f" />
+    </linearGradient>
+    <linearGradient id="colorCol1">
+      <stop stop-color="#ff7f1f" />
+    </linearGradient>
+    <linearGradient id="colorCol2">
+      <stop stop-color="#cfbf00" />
+    </linearGradient>
+
+    <!-- Defining colors for rows -->
+    <linearGradient id="colorRow0">
+      <stop stop-color="#009f3f" />
+    </linearGradient>
+    <linearGradient id="colorRow1">
+      <stop stop-color="#007fbf" />
+    </linearGradient>
+    <linearGradient id="colorRow2">
+      <stop stop-color="#7f1f9f" />
+    </linearGradient>
+  </defs>
+
+  <g fill-opacity=".2">
+    <!-- Vertical rectangles showing columns -->
+    <g transform="translate(0 48)">
+      <rect x="132" height="136" width="32" rx="8" fill="url(#colorCol0)" stroke="url(#colorCol0)"/>
+      <rect x="180" height="136" width="32" rx="8" fill="url(#colorCol1)" stroke="url(#colorCol1)"/>
+      <rect x="228" height="136" width="32" rx="8" fill="url(#colorCol2)" stroke="url(#colorCol2)"/>
+    </g>
+
+    <!-- Horizontal rectangles showing rows -->
+    <g transform="translate(128 0)">
+      <rect y="60"  width="156" height="28" rx="8" fill="url(#colorRow0)" stroke="url(#colorRow0)"/>
+      <rect y="102" width="156" height="28" rx="8" fill="url(#colorRow1)" stroke="url(#colorRow1)"/>
+      <rect y="144" width="156" height="28" rx="8" fill="url(#colorRow2)" stroke="url(#colorRow2)"/>
+    </g>
+  </g>
+
+  <!-- Triangles pointing down - for each column -->
+  <path d="M 148 44 L 156 28 H 140 Z" fill="url(#colorCol0)"/>
+  <path d="M 196 44 L 204 28 H 188 Z" fill="url(#colorCol1)"/>
+  <path d="M 244 44 L 252 28 H 236 Z" fill="url(#colorCol2)"/>
+
+  <!-- Triangles pointing left - for each row -->
+  <path d="M 304  74 L 320  82 V  66 Z" fill="url(#colorRow0)"/>
+  <path d="M 304 116 L 320 124 V 108 Z" fill="url(#colorRow1)"/>
+  <path d="M 304 158 L 320 166 V 150 Z" fill="url(#colorRow2)"/>
+
+  <g font-family="Arial" font-size="30" font-weight="bold">
+    <!-- Column indices: 0, 1, 2 -->
+    <text transform="translate(0 24)" text-anchor="middle">
+      <tspan fill="url(#colorCol0)" x="152">0</tspan>
+      <tspan fill="url(#colorCol1)" x="200">1</tspan>
+      <tspan fill="url(#colorCol2)" x="248">2</tspan>
+      <!-- Required for stable center positions of A B C -->
+      <tspan x="272" xml:space="preserve"> </tspan>
+    </text>
+
+    <!-- data = [[A, B, C]
+                 [D, E, F]
+                 [G, H, I]] -->
+    <text transform="translate(0 84)" text-anchor="middle">
+      <tspan x="64">data = [</tspan>
+      <tspan fill="url(#colorRow0)" y="0">
+        <tspan x="128">[</tspan>
+        <tspan x="152">A</tspan>
+        <tspan x="200">B</tspan>
+        <tspan x="248">C</tspan>
+        <tspan x="272">]</tspan>
+        <tspan x="340">0</tspan>
+      </tspan>
+      <tspan fill="url(#colorRow1)" y="42">
+        <tspan x="128">[</tspan>
+        <tspan x="152">D</tspan>
+        <tspan x="200">E</tspan>
+        <tspan x="248">F</tspan>
+        <tspan x="272">]</tspan>
+        <tspan x="340">1</tspan>
+      </tspan>
+      <tspan fill="url(#colorRow2)" y="84">
+        <tspan x="128">[</tspan>
+        <tspan x="152">G</tspan>
+        <tspan x="200">H</tspan>
+        <tspan x="248">I</tspan>
+        <tspan x="272">]</tspan>
+        <tspan x="340">2</tspan>
+      </tspan>
+      <tspan x="296" y="84">]</tspan>
+    </text>
+
+    <!-- data[0,0] = A -->
+    <text transform="translate(432 84)" text-anchor="middle">
+      <tspan y="0">
+        data[
+        <tspan x="48" fill="url(#colorRow0)">0</tspan>
+        <tspan x="64">,</tspan>
+        <tspan x="80" fill="url(#colorCol0)">0</tspan>
+        <tspan x="112">] =</tspan>
+        <tspan x="144" fill="url(#colorRow0)">A</tspan>
+      </tspan>
+    </text>
+
+    <!-- data[0,1] = B -->
+    <text transform="translate(672 84)" text-anchor="middle">
+      <tspan y="0">
+        data[
+        <tspan x="48" fill="url(#colorRow0)">0</tspan>
+        <tspan x="64">,</tspan>
+        <tspan x="80" fill="url(#colorCol1)">1</tspan>
+        <tspan x="112">] =</tspan>
+        <tspan x="144" fill="url(#colorRow0)">B</tspan>
+      </tspan>
+    </text>
+
+    <!-- data[0,2] = C -->
+    <text transform="translate(912 84)" text-anchor="middle">
+      <tspan y="0">
+        data[
+        <tspan x="48" fill="url(#colorRow0)">0</tspan>
+        <tspan x="64">,</tspan>
+        <tspan x="80" fill="url(#colorCol2)">2</tspan>
+        <tspan x="112">] =</tspan>
+        <tspan x="144" fill="url(#colorRow0)">C</tspan>
+      </tspan>
+    </text>
+
+    <!-- data[1,0] = D -->
+    <text transform="translate(432 126)" text-anchor="middle">
+      <tspan y="0">
+        data[
+        <tspan x="48" fill="url(#colorRow1)">1</tspan>
+        <tspan x="64">,</tspan>
+        <tspan x="80" fill="url(#colorCol0)">0</tspan>
+        <tspan x="112">] =</tspan>
+        <tspan x="144" fill="url(#colorRow1)">D</tspan>
+      </tspan>
+    </text>
+
+    <!-- data[1,1] = B -->
+    <text transform="translate(672 126)" text-anchor="middle">
+      <tspan y="0">
+        data[
+        <tspan x="48" fill="url(#colorRow1)">1</tspan>
+        <tspan x="64">,</tspan>
+        <tspan x="80" fill="url(#colorCol1)">1</tspan>
+        <tspan x="112">] =</tspan>
+        <tspan x="144" fill="url(#colorRow1)">E</tspan>
+      </tspan>
+    </text>
+
+    <!-- data[1,2] = C -->
+    <text transform="translate(912 126)" text-anchor="middle">
+      <tspan y="0">
+        data[
+        <tspan x="48" fill="url(#colorRow1)">1</tspan>
+        <tspan x="64">,</tspan>
+        <tspan x="80" fill="url(#colorCol2)">2</tspan>
+        <tspan x="112">] =</tspan>
+        <tspan x="144" fill="url(#colorRow1)">F</tspan>
+      </tspan>
+    </text>
+
+    <!-- data[2,0] = A -->
+    <text transform="translate(432 168)" text-anchor="middle">
+      <tspan y="0">
+        data[
+        <tspan x="48" fill="url(#colorRow2)">2</tspan>
+        <tspan x="64">,</tspan>
+        <tspan x="80" fill="url(#colorCol0)">0</tspan>
+        <tspan x="112">] =</tspan>
+        <tspan x="144" fill="url(#colorRow2)">G</tspan>
+      </tspan>
+    </text>
+
+    <!-- data[2,1] = B -->
+    <text transform="translate(672 168)" text-anchor="middle">
+      <tspan y="0">
+        data[
+        <tspan x="48" fill="url(#colorRow2)">2</tspan>
+        <tspan x="64">,</tspan>
+        <tspan x="80" fill="url(#colorCol1)">1</tspan>
+        <tspan x="112">] =</tspan>
+        <tspan x="144" fill="url(#colorRow2)">H</tspan>
+      </tspan>
+    </text>
+
+    <!-- data[2,2] = I -->
+    <text transform="translate(912 168)" text-anchor="middle">
+      <tspan y="0">
+        data[
+        <tspan x="48" fill="url(#colorRow2)">2</tspan>
+        <tspan x="64">,</tspan>
+        <tspan x="80" fill="url(#colorCol2)">2</tspan>
+        <tspan x="112">] =</tspan>
+        <tspan x="144" fill="url(#colorRow2)">I</tspan>
+      </tspan>
+    </text>
+  </g>
+</svg>

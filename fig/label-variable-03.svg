@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 264 52"
+    height="96">
+    <!-- Use the 'height' attribute above to scale the image up or down. -->
+
+    <!-- Rectangle around the "100.0" value -->
+    <rect x="8" y="16" width="72" height="32" fill="#fff" stroke="#000" />
+
+    <!-- Text: "100.0" -->
+    <text x="44" y="34"
+        font-family="sans-serif"
+        font-size="18px"
+        font-weight="bold"
+        text-anchor="middle"
+        dominant-baseline="middle">100.0</text>
+
+    <!-- Rectangle around the "weight_kg" label -->
+    <rect x="48" y="7" width="64" height="16" fill="#ffe680" stroke="#ffc200"
+        rx="8" ry="8" />
+
+    <!-- Text: "poids_kg" -->
+    <text x="80" y="18"
+        font-family="'Ubuntu Mono'"
+        font-size="12px"
+        font-style="italic"
+        text-anchor="middle">weight_kg</text>
+
+
+    <!-- Rectangle around the "143.0" value -->
+    <rect x="152" y="16" width="72" height="32" fill="#fff" stroke="#000" />
+
+    <!-- Text: "143.0" -->
+    <text x="188" y="34"
+        font-family="sans-serif"
+        font-size="18px"
+        font-weight="bold"
+        text-anchor="middle"
+        dominant-baseline="middle">143.0</text>
+
+    <!-- Rectangle around the "weight_lb" label -->
+    <rect x="192" y="7" width="64" height="16" fill="#ffe680" stroke="#ffc200"
+        rx="8" ry="8" />
+
+    <!-- Text: "poids_lb" -->
+    <text x="224" y="18"
+        font-family="'Ubuntu Mono'"
+        font-size="12px"
+        font-style="italic"
+        text-anchor="middle">weight_lb</text>
+</svg>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.2" width="160mm" height="100mm" viewBox="0 0 200 125" stroke-linejoin="round" preserveAspectRatio="xMidYMid" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink"  xmlns:smil="http://www.w3.org/2001/SMIL20/">
+  <!-- Top down arrow -->
+  <g transform="translate(100, 0)">
+    <path fill="none" stroke="#000000" d="M 0 0 v 12"/>
+    <path fill="#000000" stroke="none" d="M 0 16 L 4 8 H -4 Z"/>
+  </g>
+
+  <!-- Condition box -->
+  <g transform="translate(100, 16)">
+    <path fill="none" stroke="#000000" d="M 0 0 L 32 16 L 0 32 L -32 16 Z" />
+    <text font-family="Courier New, monospace" font-size="6px" font-weight="bold">
+      <tspan x="0" y="16" text-anchor="middle" dominant-baseline="middle">number &lt; 100</tspan>
+    </text>
+
+    <!-- Case True Arrow -->
+    <path fill="none" stroke="#000000" d="M -32 16 H -64 V 28"/>
+    <path fill="#000000" stroke="none" d="M -64 32 L -60 24 H -68 Z"/>
+    <text font-family="Arial" font-size="7px">
+      <tspan x="-48" y="12" text-anchor="middle" dominant-baseline="middle">True</tspan>
+    </text>
+
+    <!-- Case False Arrow -->
+    <path fill="none" stroke="#000000" d="M 32 16 H 64 V 28"/>
+    <path fill="#000000" stroke="none" d="M 64 32 L 60 24 H 68 Z"/>
+    <text font-family="Arial" font-size="7px">
+      <tspan x="48" y="12" text-anchor="middle" dominant-baseline="middle">False</tspan>
+    </text>
+  </g>
+
+  <!-- Case True box -->
+  <g transform="translate(8, 48)">
+    <path fill="none" stroke="#000000" d="M 0 0 V 24 H 56 V 0 Z"/>
+    <text font-family="Arial" font-size="6px">
+      <tspan x="28" y="8" text-anchor="middle" dominant-baseline="middle">Print</tspan>
+    </text>
+    <text font-family="Courier New, monospace" font-size="6px" font-weight="bold">
+      <tspan x="28" y="16" text-anchor="middle" dominant-baseline="middle">Smaller</tspan>
+    </text>
+  </g>
+
+  <!-- Case False box -->
+  <g transform="translate(136, 48)">
+    <path fill="none" stroke="#000000" d="M 0 0 V 24 H 56 V 0 Z"/>
+    <text font-family="Arial" font-size="6px">
+      <tspan x="28" y="8" text-anchor="middle" dominant-baseline="middle">Print</tspan>
+    </text>
+    <text font-family="Courier New, monospace" font-size="6px" font-weight="bold">
+      <tspan x="28" y="16" text-anchor="middle" dominant-baseline="middle">Not smaller</tspan>
+    </text>
+  </g>
+
+  <!-- Workflows back to Done -->
+  <g transform="translate(100, 80)">
+    <path fill="none" stroke="#000000" d="M -64 -8 V 0 H 0 V 12"/>
+    <path fill="none" stroke="#000000" d="M 64 -8 V 0 H 0 V 12"/>
+    <path fill="#000000" stroke="none" d="M 0 16 L 4 8 H -4 Z"/>
+  </g>
+
+  <!-- Done box -->
+  <g transform="translate(72, 96)">
+    <path fill="none" stroke="#000000" d="M 0 0 V 24 H 56 V 0 Z"/>
+    <text font-family="Arial" font-size="6px">
+      <tspan x="28" y="8" text-anchor="middle" dominant-baseline="middle">Print</tspan>
+    </text>
+    <text font-family="Courier New, monospace" font-size="6px" font-weight="bold">
+      <tspan x="28" y="16" text-anchor="middle" dominant-baseline="middle">Done</tspan>
+    </text>
+  </g>
+</svg>
